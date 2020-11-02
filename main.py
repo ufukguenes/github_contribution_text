@@ -206,23 +206,23 @@ def commit_to_file(matrix: list[list[int]], year, num_commits_per_day=50):
 
 if __name__ == "__main__":
     
-    input_text = "hello github"
+    input_text = "verify your nn"
     output_matrix = text_to_variable_char_matrix(input_text, 52)
     print(f"Matrix for text: '{input_text}'")
     print_matrix(output_matrix)
-    commit_to_file(output_matrix, 2020)
+    commit_to_file(output_matrix, 2023)
     print("-" * 52)
 
-    input_text = "ufuk guenes"
+    input_text = "mindflayer"
     output_matrix = text_to_variable_char_matrix(input_text, 52)
     print(f"Matrix for text: '{input_text}'")
     print_matrix(output_matrix)
-    commit_to_file(output_matrix, 2021)
+    commit_to_file(output_matrix, 2024)
     print("-" * 52)
 
-    input_text = "kit CS19 20"
+    input_text = "keep searching"
     output_matrix = text_to_variable_char_matrix(input_text, 52)
     print(f"Matrix for text: '{input_text}'")
     print_matrix(output_matrix)
-    commit_to_file(output_matrix, 2022)
+    commit_to_file(output_matrix, 2025)
     print("-" * 52)
