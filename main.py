@@ -207,9 +207,9 @@ def commit_to_file(matrix: list[list[int]], year, num_commits_per_day=50):
 
 if __name__ == "__main__":
     
-    input_text = "verify a nn"
+    input_text = "ufuk guenes"
     output_matrix = text_to_variable_char_matrix(input_text, 52)
     print(f"Matrix for text: '{input_text}'")
     print_matrix(output_matrix)
-    commit_to_file(output_matrix, 2023)
+    commit_to_file(output_matrix, 2021)
     print("-" * 52)
