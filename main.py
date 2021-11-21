@@ -185,7 +185,7 @@ def commit_to_file(matrix: list[list[int]], year, num_commits_per_day=50):
     day += day_offset
     for col in range(len(matrix[0])):
         for row in range(len(matrix)):
-            if matrix[row][col] == 1 and not (month ==1 and day <= 21):
+            if matrix[row][col] == 1 and (month ==1 and day <= 21):
                 for i in range(num_commits_per_day):
                     if month ==1 and day <= 22 and i > 1:
                         continue
