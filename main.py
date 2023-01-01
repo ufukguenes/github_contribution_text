@@ -219,10 +219,3 @@ if __name__ == "__main__":
     print_matrix(output_matrix)
     commit_to_file(output_matrix, 2024)
     print("-" * 52)
-
-    input_text = "keep searching"
-    output_matrix = text_to_variable_char_matrix(input_text, 52)
-    print(f"Matrix for text: '{input_text}'")
-    print_matrix(output_matrix)
-    commit_to_file(output_matrix, 2025)
-    print("-" * 52)
