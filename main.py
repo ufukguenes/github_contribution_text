@@ -185,8 +185,7 @@ def commit_to_file(matrix: list[list[int]], year, num_commits_per_day=50):
     day += day_offset
     for col in range(len(matrix[0])):
         for row in range(len(matrix)):
-
-            if matrix[row][col] == 1:
+            if matrix[row][col] == 1 and not (month <=1 and day <= 21):
                 for i in range(num_commits_per_day):
                     with open("commit_file.txt", "a") as f:
                         f.write(f"TZ=UTC0 GIT_COMMITTER_DATE=\"{year}-{month:02d}-{day:02d} 03:{i:02d}:00\" git commit -a -m \"{year}-{month:02d}-{day:02d}\" --date {year}-{month:02d}-{day:02d} \n")
